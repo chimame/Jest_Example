@@ -1,5 +1,5 @@
 describe('toBeNull example', () => {
-  test('equal null', () => {
+  test('not equal null', () => {
     expect(false).not.toBeNull()
   })
 
