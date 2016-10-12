@@ -16,7 +16,7 @@ describe('Counter', () => {
   afterEach(() => {
     console.log('afterEach')
   })
-  describe.only('increment', () => {
+  describe('increment', () => {
     it('1が足されること', () => {
       counter.increment()
       expect(counter.count).toBe(2)
