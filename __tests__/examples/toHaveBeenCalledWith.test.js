@@ -36,8 +36,8 @@ describe('toHaveBeenCalledWith example', () => {
   })
 
   test('handle onClickHandle', () => {
-    expect(testMock1).toHaveBeenCalledWith("a")
     subject.find('span').simulate('click')
+    expect(testMock1).toHaveBeenCalledWith("a")
     expect(testMock1).toHaveBeenCalledWith(2, 3)
   })
 })
