@@ -1,0 +1,13 @@
+exports[`toMatchSnapshot example not render child 1`] = `
+<div
+  className="pearent" />
+`;
+
+exports[`toMatchSnapshot example render child 1`] = `
+<div
+  className="pearent">
+  <span>
+    aaa
+  </span>
+</div>
+`;
