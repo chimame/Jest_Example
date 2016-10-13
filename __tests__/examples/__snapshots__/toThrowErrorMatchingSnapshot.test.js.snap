@@ -1,0 +1,1 @@
+exports[`toThrowErrorMatchingSnapshot example throw error 1`] = `"throw sample"`;
