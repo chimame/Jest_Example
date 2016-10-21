@@ -1,6 +1,8 @@
 import React from 'react'
+import { shallow } from 'enzyme'
+import { shallowToJson } from 'enzyme-to-json'
 
-const sample = (renderChild) => {
+const Sample = ({renderChild}) => {
   let child = null
   if (renderChild) {
     child = <span>aaa</span>
@@ -14,11 +16,15 @@ const sample = (renderChild) => {
 }
 
 describe('toMatchSnapshot example', () => {
+  const subject = (renderChild) => {
+    const sampleRender = shallow(<Sample renderChild={renderChild} />)
+    return shallowToJson(sampleRender)
+  }
   test('render child', () => {
-    expect(sample(true)).toMatchSnapshot()
+    expect(subject(true)).toMatchSnapshot()
   })
 
   test('not render child', () => {
-    expect(sample(false)).toMatchSnapshot()
+    expect(subject(false)).toMatchSnapshot()
   })
 })
