@@ -1,6 +1,6 @@
-describe('mockReturnValue example', () => {
+describe('mockImplementation example', () => {
   const mock = jest.fn()
-  mock.mockReturnValue(1)
+  mock.mockImplementation(() => 1)
   test('return 1', () => {
     expect(mock()).toBe(1)
     expect(mock()).toBe(1)

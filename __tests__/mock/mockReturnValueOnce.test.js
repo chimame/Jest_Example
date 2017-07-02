@@ -1,7 +1,7 @@
-describe('mockReturnValue example', () => {
+describe('mockImplementationOnce example', () => {
   const mock = jest.fn(() => 1)
-  mock.mockReturnValueOnce("aa")
-  mock.mockReturnValueOnce(4)
+  mock.mockImplementationOnce(() => "aa")
+  mock.mockImplementationOnce(() => 4)
 
   test('changing return val', () => {
     expect(mock()).toBe("aa")
