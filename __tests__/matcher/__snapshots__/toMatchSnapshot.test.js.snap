@@ -1,11 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`toMatchSnapshot example not render child 1`] = `
 <div
-  className="pearent" />
+  className="pearent"
+/>
 `;
 
 exports[`toMatchSnapshot example render child 1`] = `
 <div
-  className="pearent">
+  className="pearent"
+>
   <span>
     aaa
   </span>
