@@ -6,4 +6,8 @@ describe('toContain example', () => {
   test('not include 2', () => {
     expect([1,"2",3]).not.toContain(2)
   })
+
+  test('include aabb', () => {
+    expect("testaabbcc").toContain('aabb')
+  })
 })
