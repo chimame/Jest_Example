@@ -16,7 +16,7 @@
     "enzyme": "^2.9.1",
     "enzyme-to-json": "^1.1.4",
     "jest": "^20.0.4",
-    "react-addons-test-utils": "^15.6.0"
+    "react-test-renderer": "^15.6.1"
   },
   "dependencies": {
     "react": "^15.6.1",
